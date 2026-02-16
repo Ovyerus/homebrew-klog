@@ -13,6 +13,8 @@ class Klog < Formula
     raise 'unexpected CPU'
   end
 
+  deprecate! date: "2026-02-16", because: "The ovyerus/klog tap is no longer maintained due to Klog being added to the core Homebrew tap: https://formulae.brew.sh/formula/klog. This tap will continue to be available until 2026-03-16, at which point it will be disabled and unusable."
+
   def install
     bin.install 'klog'
   end
