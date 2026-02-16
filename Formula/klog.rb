@@ -4,11 +4,11 @@ class Klog < Formula
   license 'MIT'
 
   if Hardware::CPU.intel?
-    url 'https://github.com/jotaen/klog/releases/download/v6.6/klog-mac-intel.zip'
-    sha256 'e3627b1948f884749c72a01c4727d19d7a889069fd3389ed899cc30c5dfe6741'
+    url 'https://github.com/jotaen/klog/releases/download/v7.0/klog-mac-intel.zip'
+    sha256 'a65fd26d342151b3dabf28daa9d39cdb781836e7f4f735a684f279c2829cbbfb'
   elsif Hardware::CPU.arm?
-    url 'https://github.com/jotaen/klog/releases/download/v6.6/klog-mac-arm.zip'
-    sha256 '501246c3b137d2ec083d4d099d7664a026410a73c0503201a818593a7f1b22e2'
+    url 'https://github.com/jotaen/klog/releases/download/v7.0/klog-mac-arm.zip'
+    sha256 '49b97843c6e2681b62d3d0fcaf7107c6679eb4efefda1b3a1bee901a8dbee20a'
   else
     raise 'unexpected CPU'
   end
