@@ -5,15 +5,15 @@ class Klog < Formula
 
   if Hardware::CPU.intel?
     url 'https://github.com/jotaen/klog/releases/download/v7.0/klog-mac-intel.zip'
-    sha256 'a65fd26d342151b3dabf28daa9d39cdb781836e7f4f735a684f279c2829cbbfb'
+    sha256 '0000000000000000000000000000000000000000000000000000000000000000'
   elsif Hardware::CPU.arm?
     url 'https://github.com/jotaen/klog/releases/download/v7.0/klog-mac-arm.zip'
-    sha256 '49b97843c6e2681b62d3d0fcaf7107c6679eb4efefda1b3a1bee901a8dbee20a'
+    sha256 '0000000000000000000000000000000000000000000000000000000000000000'
   else
     raise 'unexpected CPU'
   end
 
-  deprecate! date: "2026-02-16", because: "The ovyerus/klog tap is no longer maintained due to Klog being added to the core Homebrew tap: https://formulae.brew.sh/formula/klog. This tap will continue to be available until 2026-03-16, at which point it will be disabled and unusable."
+  disable! date: "2026-03-26", because: "The ovyerus/klog tap has been discontinued due to Klog being added to the core Homebrew tap: https://formulae.brew.sh/formula/klog."
 
   def install
     bin.install 'klog'
